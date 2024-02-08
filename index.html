@@ -5,55 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MH</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaStyles.css">
+    <link rel="stylesheet" href="mediaStyles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="./images/favicon.ico">
-
+    <link rel="icon" href="./images/favicon.ico" />
   </head>
   <body>
     <div class="wrap">
       <div class="resp">
-      <!-- NAVBAR -->
-      <div class="conatiner">
-        <div class="logo">
-          <img src="images/logo.png" alt="" />
+        <!-- NAVBAR -->
+        <div class="conatiner">
+          <div class="logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="right">
+            <ul id="sidemenu">
+              <img
+                class="navt"
+                src="images/close.png"
+                onclick="closemenu()"
+                alt=""
+              />
+              <li style="--i: 1"><a href="#header">Home</a></li>
+              <li style="--i: 2"><a href="#about">About</a></li>
+              <li style="--i: 3"><a href="#techstack">Services</a></li>
+              <li style="--i: 4"><a href="#portfolio">Porfolio</a></li>
+              <li style="--i: 5"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <img
+            class="navtoggle"
+            src="images/menu.png"
+            onclick="openmenu()"
+            alt=""
+          />
         </div>
-        <div class="right">
-          <ul id="sidemenu">
-            <img class="navt" src="images/close.png" onclick="closemenu()" alt="">
-            <li style="--i: 1"><a href="#header">Home</a></li>
-            <li style="--i: 2"><a href="#about">About</a></li>
-            <li style="--i: 3"><a href="#techstack">Services</a></li>
-            <li style="--i: 4"><a href="#portfolio">Porfolio</a></li>
-            <li style="--i: 5"><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-          <img class="navtoggle" src="images/menu.png" onclick="openmenu()" alt="">
-      </div>
 
-      <!-- MAIN -->
-      <div class="main">
-        <div class="lmain">
-          <h1>Hi, I'm <span style="color: var(--var-color)">H</span>usain</h1>
-          <h3><span class="change"></span></h3>
-        </div>
-        <div class="rmain">
-          <img src="images/mh1.png" width="400px" alt="" />
+        <!-- MAIN -->
+        <div class="main">
+          <div class="lmain">
+            <h1>Hi, I'm <span style="color: var(--var-color)">H</span>usain</h1>
+            <h3><span class="change"></span></h3>
+          </div>
+          <div class="rmain">
+            <img src="images/mh1.png" width="400px" alt="" />
+          </div>
         </div>
       </div>
-    </div>
 
       <!-- ABOUT -->
-      
+
       <div id="about" data-aos="zoom-out">
         <div class="cont">
           <div class="row">
             <div class="about-col-1" data-aos="zoom-out">
-              <img  src="images/copy.png" alt="" />
+              <img src="images/copy.png" alt="" />
             </div>
             <div class="about-col-2" data-aos="zoom-out">
-              <h1 class="sut">About Me</h1>
+              <h1 class="sut des">About Me</h1>
               <p class="niche">
                 As a talented web developer, I specialize in designing and
                 building modern, functional, and visually stunning websites. My
@@ -66,27 +75,37 @@
               </p>
 
               <div class="title">
-                <p class="a tlink actlink" onclick="opentab('skills')">Skills</p>
+                <p class="a tlink actlink" onclick="opentab('skills')">
+                  Skills
+                </p>
                 <p class="b tlink" onclick="opentab('education')">Education</p>
-                <p class="c tlink" onclick="opentab('Certificate')">Certifications</p>
+                <p class="c tlink" onclick="opentab('Certificate')">
+                  Certifications
+                </p>
               </div>
               <div class="tcontent active-tab" id="skills">
                 <ul>
                   <li><span>UI/UX</span><br />Design Web Interface</li>
                   <li><span>Web Development</span><br />Website building</li>
-                  <li><span>Backend Development</span><br />Node.js,Express.js,MongoDB</li>
+                  <li>
+                    <span>Backend Development</span
+                    ><br />Node.js,Express.js,MongoDB
+                  </li>
                 </ul>
               </div>
               <div class="tcontent" id="education">
                 <ul>
-                  <li><span>Parul Institute of Engineering and Technology</span><br />2021-2025</li>
-                  <!-- <li><span>XYZ</span><br />2020</li>
-                  <li><span>ABRA</span><br />2019</li> -->
+                  <li>
+                    <span>Parul Institute of Engineering and Technology</span
+                    ><br />2021-2025
+                  </li>
                 </ul>
               </div>
               <div class="tcontent" id="Certificate">
                 <ul>
-                  <li><span>React(Inc. React router & Redux)</span><br />Udemy</li>
+                  <li>
+                    <span>React(Inc. React router & Redux)</span><br />Udemy
+                  </li>
                   <li><span>Web Development</span><br />Infosys Springboard</li>
                   <li><span>Software Engineering</span><br />NPTEL</li>
                 </ul>
@@ -99,63 +118,80 @@
       <!-- Tech Stack -->
       <div class="my_tech_stack_section" id="techstack" data-aos="fade-down">
         <div class="mts_heading">
-            <h1>My Tech Stack</h1>
-            <h3> Technologies I’ve been working with recently</h3>
+          <h1>My Tech Stack</h1>
+          <h3>Technologies I’ve been working with recently</h3>
         </div>
-        <div class="mts_flex" >
-            <div class="tooltip"><img src="./images/icon-html.svg" alt="html-icon">
-                <span class="tooltiptext">HTML</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-css.svg" alt="css-icon">
-                <span class="tooltiptext">CSS</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-js.svg" alt="js-icon">
-                <span class="tooltiptext">Javascript</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-react.svg" alt="react-icon">
-                <span class="tooltiptext">React JS</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-bootstrap.svg" alt="bootstrap-icon">
-                <span class="tooltiptext">Bootstrap</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-nodejs.svg" alt="nodejs-icon">
-                <span class="tooltiptext">Node JS</span>
-            </div>
-            <div id="express" class="tooltip"><img src="./images/icon-express.svg" alt="express-icon">
-                <span class="tooltiptext">Express JS</span>
-            </div>
-            <div id="express" class="tooltip"><img src="./images/icon-mongodb.svg" alt="mongodb-icon">
-                <span class="tooltiptext">MongoDB</span>
-            </div>
-            <div  class="tooltip"><img src="./images/icon-mysql.svg" alt="mysql-icon">
-                <span class="tooltiptext">MySQL</span>
-            </div>
-            <div id="express" class="tooltip"><img src="./images/icon-next.svg" alt="spring-icon">
-                <span class="tooltiptext">Next JS</span>
-            </div>
-            <div class="tooltip ts"><img src="./images/icon-typecript.svg" alt="hibernate-icon">
-                <span class="tooltiptext">Typescript</span>
-            </div>
-            <div class="tooltip ts"><img src="./images/icon-redux.svg" alt="hibernate-icon">
-                <span class="tooltiptext">Redux</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-java.svg" alt="java-icon">
-                <span class="tooltiptext">Java</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-git.svg" alt="git-icon">
-                <span class="tooltiptext">Git</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-github.svg" alt="github-icon">
-                <span class="tooltiptext">Github</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-vscode.svg" alt="vscode-icon">
-                <span class="tooltiptext">VScode</span>
-            </div>
-            <div class="tooltip"><img src="./images/icon-vite.svg" alt="vite-icon">
-                <span class="tooltiptext">Vite</span>
-            </div>
+        <div class="mts_flex">
+          <div class="tooltip">
+            <img src="./images/icon-html.svg" alt="html-icon" />
+            <span class="tooltiptext">HTML</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-css.svg" alt="css-icon" />
+            <span class="tooltiptext">CSS</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-js.svg" alt="js-icon" />
+            <span class="tooltiptext">Javascript</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-react.svg" alt="react-icon" />
+            <span class="tooltiptext">React JS</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-bootstrap.svg" alt="bootstrap-icon" />
+            <span class="tooltiptext">Bootstrap</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-nodejs.svg" alt="nodejs-icon" />
+            <span class="tooltiptext">Node JS</span>
+          </div>
+          <div id="express" class="tooltip">
+            <img src="./images/icon-express.svg" alt="express-icon" />
+            <span class="tooltiptext">Express JS</span>
+          </div>
+          <div id="express" class="tooltip">
+            <img src="./images/icon-mongodb.svg" alt="mongodb-icon" />
+            <span class="tooltiptext">MongoDB</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-mysql.svg" alt="mysql-icon" />
+            <span class="tooltiptext">MySQL</span>
+          </div>
+          <div id="express" class="tooltip">
+            <img src="./images/icon-next.svg" alt="spring-icon" />
+            <span class="tooltiptext">Next JS</span>
+          </div>
+          <div class="tooltip ts">
+            <img src="./images/icon-typecript.svg" alt="hibernate-icon" />
+            <span class="tooltiptext">Typescript</span>
+          </div>
+          <div class="tooltip ts">
+            <img src="./images/icon-redux.svg" alt="hibernate-icon" />
+            <span class="tooltiptext">Redux</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-java.svg" alt="java-icon" />
+            <span class="tooltiptext">Java</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-git.svg" alt="git-icon" />
+            <span class="tooltiptext">Git</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-github.svg" alt="github-icon" />
+            <span class="tooltiptext">Github</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-vscode.svg" alt="vscode-icon" />
+            <span class="tooltiptext">VScode</span>
+          </div>
+          <div class="tooltip">
+            <img src="./images/icon-vite.svg" alt="vite-icon" />
+            <span class="tooltiptext">Vite</span>
+          </div>
         </div>
-    </div>
+      </div>
 
       <!-- PORTFOLIO -->
 
@@ -164,115 +200,178 @@
         <div class="contain">
           <div class="box" data-aos="slide-right">
             <h3>Ecom Website</h3>
-            <img src="images/ecom.png" alt="">
+            <img src="images/ecom.png" alt="" />
             <p>
-            A fully functional E-commerce website with seamless user interface with efficient navigation, responsive design, and robust features.</p>
-            <button><a href="https://electro-web-x2es.onrender.com/" target="_blank">Visit Site</a></button>
+              A fully functional E-commerce website with seamless user interface
+              with efficient navigation, responsive design, and robust features.
+            </p>
+            <button>
+              <a href="https://electro-web-x2es.onrender.com/" target="_blank"
+                >Visit Site</a
+              >
+            </button>
           </div>
           <div class="box" data-aos="slide-left">
             <h3>Portfolio Website</h3>
-            <img src="images/portfolio.png" alt="">
+            <img src="images/portfolio.png" alt="" />
             <p>
-              Experience the art of innovation on my portfolio website, where captivating animations seamlessly weave through my work.
+              Experience the art of innovation on my portfolio website, where
+              captivating animations seamlessly weave through my work.
             </p>
             <button><a href="">Visit Site</a></button>
           </div>
           <div class="box" data-aos="slide-left">
             <h3>Ecom Website</h3>
-            <img src="images/ecom.png" alt="">
+            <img src="images/ecom.png" alt="" />
             <p>
-              An online code editor with video call functionality is a collaborative programming platform that allows users to write and edit code in real-time.
+              An online code editor with video call functionality is a
+              collaborative programming platform that allows users to write and
+              edit code in real-time.
             </p>
             <button><a href="">Visit Site</a></button>
           </div>
           <div class="box" data-aos="slide-right">
             <h3>Ecom Website</h3>
-            <img src="images/ecom.png" alt="">
+            <img src="images/ecom.png" alt="" />
             <p>
-              Experience the art of innovation on my portfolio website, where captivating animations seamlessly weave through my work.
+              Experience the art of innovation on my portfolio website, where
+              captivating animations seamlessly weave through my work.
             </p>
             <button><a href="">Visit Site</a></button>
-          </div>        
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="contact" id="contact" data-aos="zoom-out">
+        <form action="/">
+          <section
+            action="/"
+            class="bg-black text-gray-400 bg-black body-font relative"
+          >
+            <div class="absolute inset-0 bg-black">
+              <iframe
+                title="map"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                scrolling="no"
+                style="filter: grayscale(1) contrast(1) opacity(0.25)"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777314.872995804!2d68.6848901800457!3d22.399496801005473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1705999731578!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="bg-black container px-5 py-24 mx-auto flex">
+              <div
+                data-aos="zoom-in"
+                class="lg:w-1/3 md:w-1/2 bg-black shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10"
+              >
+                <h2
+                  class="text-white text-lg mb-1 font-medium weight-bold title-font"
+                >
+                  Contact Me
+                </h2>
+                <p class="leading-relaxed mb-5">
+                  Contact me by filling the folllowing details
+                </p>
+                <div class="relative mb-4">
+                  <label for="email" class="leading-7 text-sm text-gray-400"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+                <div class="relative mb-4">
+                  <label for="message" class="leading-7 text-sm text-gray-400"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+                <button
+                  class="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg"
+                >
+                  Submit
+                </button>
+                <p class="text-xs text-gray-400 text-opacity-90 mt-3">
+                  for any query u can contact me
+                </p>
+              </div>
+            </div>
+          </section>
+        </form>
       </div>
     </div>
 
-    <!-- CONTACT -->
-    <div class="contact" id="contact" data-aos="zoom-out">
-      <form action="/">
-      <section action="/" class="bg-black text-gray-400 bg-black body-font relative">
-        <div class="absolute inset-0 bg-black">
-          <iframe title="map" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="filter: grayscale(1) contrast(1) opacity(0.25);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777314.872995804!2d68.6848901800457!3d22.399496801005473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1705999731578!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div  class="bg-black container px-5 py-24 mx-auto flex">
-          <div data-aos="zoom-in"
-            class="lg:w-1/3 md:w-1/2 bg-black shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
-            <h2 class="text-white text-lg mb-1 font-medium  weight-bold title-font">Contact Me</h2>
-            <p class="leading-relaxed mb-5">Contact me by filling the folllowing details</p>
-            <div class="relative mb-4">
-              <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
-              <input type="email" id="email" name="email"
-                class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-            <div class="relative mb-4">
-              <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
-              <textarea id="message" name="message"
-                class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-            </div>
-            <button
-            class="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Submit</button>
-            <p class="text-xs text-gray-400 text-opacity-90 mt-3">for any query u can contact me </p>
-          </div>
-        </div>
-      </section>
-    </form>
-  </div>
-</div>
-
     <div class="footer">
-      
-        <div class="footer_1">
-          <div class="footlogo">
-            <img src="images/logo.png" alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur quis cupiditate!</p>
-          </div>
+      <div class="footer_1">
+        <div class="footlogo">
+          <img src="images/logo.png" alt="" />
+          <p>
+            Transforming ideas into code with a focus on efficiency and seamless
+            user experience.
+          </p>
         </div>
-        <div class="footer_2">
-          <h1>Links</h1>
+      </div>
+      <div class="footer_2">
+        <h1>Links</h1>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#blogs">Blogs</a></li>
           <li><a href="#support">Support</a></li>
         </ul>
+      </div>
+
+      <div class="footer_3">
+        <div class="footer31">
+          <img src="images/instagram.png" alt="" />
+          <a class="x" href="https://www.instagram.com/m_husain4real/"
+            >instagram</a
+          >
         </div>
-        
-        <div class="footer_3">
-            <div class="footer31">
-            <img  src="images/instagram.png" alt="" >
-            <a class= "x" href="https://www.instagram.com/m_husain4real/">instagram</a>
-            </div>
-            <div class="footer31">
-            <img  src="images/github.png" alt="">
-            <a class= "y" href="https://github.com/MHusain22">github</a>
-            </div>
-            <div class="footer31">
-            <img  src="images/linkedin.png" alt="" >
-            <a class= "z" href="https://www.linkedin.com/in/m-husain-vijapura-3750aa249/">linkedin</a>
-          </div>
-        
+        <div class="footer31">
+          <img src="images/github.png" alt="" />
+          <a class="y" href="https://github.com/MHusain22">github</a>
         </div>
-        
-      
-  
+        <div class="footer31">
+          <img src="images/linkedin.png" alt="" />
+          <a
+            class="z"
+            href="https://www.linkedin.com/in/m-husain-vijapura-3750aa249/"
+            >linkedin</a
+          >
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="app.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
