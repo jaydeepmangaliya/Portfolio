@@ -68,6 +68,12 @@ body {
   display: none;
   cursor: pointer;
 }
+.navt {
+  width: 30px;
+  filter: invert(100%);
+  display: none;
+  cursor: pointer;
+}
 
 /* MAIN */
 

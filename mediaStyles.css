@@ -14,12 +14,29 @@
     display: block;
     margin-right: 20px;
   }
-  .right ul {
-    display: none;
+  .right ul{
+    background-color: rgb(241, 159, 27);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    display: block;
+    z-index: 212;
+    transition: right 0.5s ease;
+  
+  }
+  .right ul li{
+    margin-bottom: 50px;
+  }
+  .navt{
+    display: block;
+    margin-left: 20px;
   }
   .logo {
-    width: 110px;
-    margin-left: -40px;
+    width: 270px;
+    margin-left: -45px;
   }
   .rmain img {
     /* position: absolute;
@@ -34,7 +51,9 @@
   .resp {
     height: 100vh;
   }
-  
+  .tooltip img{
+    width: 93px;
+  }
   .lmain h1 {
     font-size: 1.25rem;
   }

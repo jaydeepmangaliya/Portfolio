@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./images/favicon.ico">
-    
+
   </head>
   <body>
     <div class="wrap">
@@ -20,7 +20,8 @@
           <img src="images/logo.png" alt="" />
         </div>
         <div class="right">
-          <ul>
+          <ul id="sidemenu">
+            <img class="navt" src="images/close.png" onclick="closemenu()" alt="">
             <li style="--i: 1"><a href="#header">Home</a></li>
             <li style="--i: 2"><a href="#about">About</a></li>
             <li style="--i: 3"><a href="#techstack">Services</a></li>
@@ -28,7 +29,7 @@
             <li style="--i: 5"><a href="#contact">Contact</a></li>
           </ul>
         </div>
-          <img class="navtoggle" id="sidemenu" src="images/menu.png" alt="">
+          <img class="navtoggle" src="images/menu.png" onclick="openmenu()" alt="">
       </div>
 
       <!-- MAIN -->
