@@ -1,0 +1,89 @@
+@media screen and (max-width: 600px) {
+  body{
+    /* margin-right: 10px; */
+  }
+  .wrap{
+    overflow: hidden;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+  }
+  .navtoggle {
+    display: block;
+    margin-right: 20px;
+  }
+  .right ul {
+    display: none;
+  }
+  .logo {
+    width: 110px;
+    margin-left: -40px;
+  }
+  .rmain img {
+    /* position: absolute;
+        z-index: -1; */
+    width: 200px;
+    float: right;
+    margin-top: -100px;
+    margin-right: -20px;
+    overflow: auto;
+    margin-left: -90px;
+  }
+  .resp {
+    height: 100vh;
+  }
+  
+  .lmain h1 {
+    font-size: 1.25rem;
+  }
+  .lmain .change {
+    margin-right: 50px;
+    font-size: 15px;
+  }
+
+  /* ABOUT */
+
+  #about img{
+    display: none;
+  }
+  #about{
+    margin-left: -10px;
+    /* padding-right: 30px; */
+  }
+  .title{
+  
+  }
+  .niche{
+    font-size: 15px;
+    padding-right: 30px;
+  }
+   /* tech stack */
+    .mts_heading{
+      text-align: center;
+    }
+
+    
+    /* projects */
+    .contain{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
+    .boxim{
+      display: flex;
+      justify-content: center;
+    }
+    .footer{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .my_tech_stack_section{
+      overflow: none;
+    }
+    
+}
