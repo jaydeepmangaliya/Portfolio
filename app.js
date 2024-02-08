@@ -37,7 +37,7 @@ AOS.init();
 
 AOS.init({
     offset:120,
-    duration: 1000,
+    duration: 900,
 })
 
 let divs = document.querySelectorAll('div');
