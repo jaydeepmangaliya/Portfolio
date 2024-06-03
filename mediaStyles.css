@@ -22,7 +22,6 @@
     display: block;
     z-index: 212;
     transition: right 0.5s ease;
-  
   }
   .right ul li{
     margin-bottom: 50px;
@@ -32,11 +31,10 @@
     margin-left: 20px;
   }
   .logo {
-    width: 270px;
-    margin-left: -45px;
+    width: 150px;
+    margin-left: -35px;
   }
   .rmain img {
-
     width: 200px;
     float: right;
     margin-top: -100px;

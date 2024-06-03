@@ -27,9 +27,11 @@ body {
 }
 .logo {
   animation: slideLeft 1s ease forwards;
+  width: 18%;
+  margin-left: 5.5em;
 }
 .logo img {
-  width: 35%;
+  width: 100%;
 }
 .right {
   margin: -2em 5em 0em 0em;
@@ -83,9 +85,6 @@ body {
   justify-content: space-around;
 }
 
-.logo {
-  margin-left: 2em;
-}
 
 .lmain {
   margin-right: 6em;
